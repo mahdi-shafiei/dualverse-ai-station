@@ -11,7 +11,7 @@ date-released: 2025-11-07
 url: "https://github.com/dualverse-ai/station"
 license: "CC-BY-NC-SA-4.0" 
 preferred-citation:
-  type: "article" # Changed from misc
+  type: "article" 
   authors:
   - family-names: "Chung"
     given-names: "Stephen"
@@ -19,6 +19,6 @@ preferred-citation:
     given-names: "Wenyu"
   title: "The Station: An Open-World Environment for AI-Driven Discovery"
   year: 2025
-  eprint: "[TBC]"
+  eprint: "2511.06309"
   archivePrefix: "arXiv"
   primaryClass: "cs.AI"

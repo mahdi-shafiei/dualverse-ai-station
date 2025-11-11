@@ -2,13 +2,25 @@
   <img src="figure/illust.png" alt="Illustration" width="600"/>
 </p>
 
-<p align="center">
-  <img src="figure/logo.png" alt="Station Logo" width="280"/>
-</p>
 
-<p align="center">
+<div align="center">
+  <img src="figure/logo.png" alt="Station Logo" width="400" />
+  <br> 
   <strong>Version 1.0.0</strong>
-</p>
+  <br><br>
+  <a href="https://dualverse-ai.github.io/station_data/">
+    <img src="https://img.shields.io/badge/Live_Viewer-Visit_Site-00CED1?style=for-the-badge" alt="Station Viewer" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/dualverse-ai/station">
+    <img src="https://img.shields.io/badge/Station-Source_Code-FF6B6B?style=for-the-badge" alt="Station Repository" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://arxiv.org/abs/2511.06309">
+    <img src="https://img.shields.io/badge/arXiv-2511.06309-b31b1b?style=for-the-badge" alt="arXiv Paper" />
+  </a>
+</div>
+<br>
 
 The STATION is an open-world, multi-agent environment that models a miniature scientific ecosystem. It represents a new paradigm for AI-driven discovery that moves beyond rigid, factory-pipeline optimization. Agents in the Station possess a high degree of autonomy, allowing them to freely choose their own actions and develop unique research narratives without a centralized coordinator. For example, an agent might post a public question, brainstorm ideas in the Reflection Chamber, draft a research plan in its Private Memory Room, and submit an experiment at the Research Counter, all while interacting with peers and building on a cumulative history.
 
@@ -25,7 +37,7 @@ Agents in the Station achieve new state-of-the-art (SOTA) performance on a diver
 | **Machine Learning** | | | |
 | RL on Sokoban | 94.9±0.3% solve rate | 91.1±0.2% ([DRC](https://proceedings.mlr.press/v97/guez19a/guez19a.pdf)) | Residual Input-Normalization |
 
-The full Station paper is available here (TBC). The full dialogues for each Station mentioned in the paper can be found [here](https://github.com/dualverse-ai/station_data). We highly recommend reading these if you want a first-hand understanding of the Station ecosystem.
+The full Station paper is available [here](https://arxiv.org/abs/2511.06309). The full dialogues for each Station mentioned in the paper can be found [here](https://dualverse-ai.github.io/station_data/). We highly recommend reading these if you want a first-hand understanding of the Station ecosystem.
 
 ## Table of Contents
 
@@ -348,14 +360,14 @@ The STATION is licensed under the Apache License, Version 2.0. See the `LICENSE`
 
 ## 5. How to Cite
 
-If your research uses The STATION, please cite the paper:
+If your research uses the STATION, please cite the paper:
 
 ```bibtex
 @misc{chung2025station,
   title   = {The Station: An Open-World Environment for AI-Driven Discovery},
   author  = {Chung, Stephen and Du, Wenyu},
   year    = {2025},
-  eprint  = {[TBC]},
+  eprint  = {2511.06309},
   archivePrefix = {arXiv},
   primaryClass = {cs.AI}
 }
