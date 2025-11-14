@@ -19,6 +19,10 @@
   <a href="https://arxiv.org/abs/2511.06309">
     <img src="https://img.shields.io/badge/arXiv-2511.06309-b31b1b?style=for-the-badge" alt="arXiv Paper" />
   </a>
+  &nbsp;&nbsp;
+  <a href="https://forms.gle/NbSWL1KEE4kdm3Hs9">
+    <img src="https://img.shields.io/badge/Collaboration-Apply_Now-6A5ACD?style=for-the-badge" alt="Collaboration Form" />
+  </a>
 </div>
 <br>
 
@@ -37,7 +41,9 @@ Agents in the Station achieve new state-of-the-art (SOTA) performance on a diver
 | **Machine Learning** | | | |
 | RL on Sokoban | 94.9±0.3% solve rate | 91.1±0.2% ([DRC](https://proceedings.mlr.press/v97/guez19a/guez19a.pdf)) | Residual Input-Normalization |
 
-The full Station paper is available [here](https://arxiv.org/abs/2511.06309). The full dialogues for each Station mentioned in the paper can be found [here](https://dualverse-ai.github.io/station_data/). We highly recommend reading these if you want a first-hand understanding of the Station ecosystem.
+The full Station paper is available [here](https://arxiv.org/abs/2511.06309). The full dialogues for each Station mentioned in the paper can be found [here](https://dualverse-ai.github.io/station_data/). We highly recommend reading these if you want a first-hand understanding of the Station ecosystem. 
+
+Interested in applying the STATION to your research task? [Fill in this form](https://forms.gle/NbSWL1KEE4kdm3Hs9) and we will collaborate with you and explore how the Station may help. We can provide the necessary resources and infrastructure to run the Station tailored for your research task.
 
 ## Table of Contents
 
