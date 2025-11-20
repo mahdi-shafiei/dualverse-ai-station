@@ -17,6 +17,13 @@
 // web_interface/static/js/model_presets.js
 const MODEL_PRESETS = [
     {
+        "display_name": "Gemini 3 Pro (300k)",
+        "model_provider_class": "Gemini",
+        "model_name": "gemini-3-pro-preview",
+        "initial_tokens_max": 300000,
+        "llm_system_prompt": "",
+    },    
+    {
         "display_name": "Gemini 2.5 Pro (300k)",
         "model_provider_class": "Gemini",
         "model_name": "gemini-2.5-pro",
@@ -44,6 +51,13 @@ const MODEL_PRESETS = [
         "initial_tokens_max": 200000,
         "llm_system_prompt": ""
     },
+    {
+        "display_name": "GPT-5.1 (270k)",
+        "model_provider_class": "OpenAI",
+        "model_name": "gpt-5.1",
+        "initial_tokens_max": 270000,
+        "llm_system_prompt": ""
+    },    
     {
         "display_name": "GPT-5 (270k)",
         "model_provider_class": "OpenAI",
