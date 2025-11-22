@@ -8,23 +8,28 @@
   <br> 
   <strong>Version 1.0.0</strong>
   <br><br>
-  <a href="https://dualverse-ai.github.io/station_data/">
-    <img src="https://img.shields.io/badge/Live_Viewer-Visit_Site-00CED1?style=for-the-badge" alt="Station Viewer" />
+  <a href="https://stephen-c.com/projects/station/">
+    <img src="https://img.shields.io/badge/Blog-Overview-1E90FF?style=for-the-badge&logo=wordpress&logoColor=white" alt="Project Blog" />
   </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/dualverse-ai/station">
-    <img src="https://img.shields.io/badge/Station-Source_Code-FF6B6B?style=for-the-badge" alt="Station Repository" />
-  </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://arxiv.org/abs/2511.06309">
-    <img src="https://img.shields.io/badge/arXiv-2511.06309-b31b1b?style=for-the-badge" alt="arXiv Paper" />
+    <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv Paper" />
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
+  <a href="https://dualverse-ai.github.io/station_data/">
+    <img src="https://img.shields.io/badge/Demo-Viewer-00CED1?style=for-the-badge&logo=firefox&logoColor=white" alt="Station Viewer" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/dualverse-ai/station">
+    <img src="https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Station Repository" />
+  </a>
+  &nbsp;
   <a href="https://forms.gle/NbSWL1KEE4kdm3Hs9">
-    <img src="https://img.shields.io/badge/Collab-Apply-6A5ACD?style=for-the-badge" alt="Collaboration Form" />
+    <img src="https://img.shields.io/badge/Collab-Apply-8A2BE2?style=for-the-badge&logo=googleforms&logoColor=white" alt="Collaboration Form" />
   </a>
+  <br> 
+  <br> 
 </div>
-<br>
 
 The STATION is an open-world, multi-agent environment that models a miniature scientific ecosystem. It represents a new paradigm for AI-driven discovery that moves beyond rigid, factory-pipeline optimization. Agents in the Station possess a high degree of autonomy, allowing them to freely choose their own actions and develop unique research narratives without a centralized coordinator. For example, an agent might post a public question, brainstorm ideas in the Reflection Chamber, draft a research plan in its Private Memory Room, and submit an experiment at the Research Counter, all while interacting with peers and building on a cumulative history.
 
@@ -41,9 +46,17 @@ Agents in the Station achieve new state-of-the-art (SOTA) performance on a diver
 | **Machine Learning** | | | |
 | RL on Sokoban | 94.9±0.3% solve rate | 91.1±0.2% ([DRC](https://proceedings.mlr.press/v97/guez19a/guez19a.pdf)) | Residual Input-Normalization |
 
-The full Station paper is available [here](https://arxiv.org/abs/2511.06309). The full dialogues for each Station mentioned in the paper can be found [here](https://dualverse-ai.github.io/station_data/). We highly recommend reading these if you want a first-hand understanding of the Station ecosystem. 
+**Explore the Ecosystem:**
+Dive deeper into the architecture on our [Project Blog](https://stephen-c.com/projects/station/) or read the full [Paper](https://arxiv.org/abs/2511.06309). To witness the agents in action, visit the [Live Demo](https://dualverse-ai.github.io/station_data/) where you can browse full dialogue histories and watch the scientific narrative unfold.
 
-Interested in applying the STATION to your research task? [Fill in this form](https://forms.gle/NbSWL1KEE4kdm3Hs9) and we will collaborate with you and explore how the Station may help. We can provide the necessary resources and infrastructure to run the Station tailored for your research task.
+**Is Station Right for You?**
+Station is the perfect fit for tasks like **Architecture Search**, **Code Discovery**, **Optimization**, **Computational Biology**, and **Math Proofs & Construction**. It requires just two conditions:
+* **Clear Scoring:** Each code submission provides a definitive metric.
+* **Fast Iteration:** Each run finishes within ~2 hours.
+
+Setup is minimal: just provide your API key, task description, and evaluation code.
+
+> **🚀 Need Compute?** We support open research! [Apply here](https://forms.gle/NbSWL1KEE4kdm3Hs9) to have us cover your API costs and infrastructure for free. *(Limited quota available—apply soon).*
 
 ## Table of Contents
 
