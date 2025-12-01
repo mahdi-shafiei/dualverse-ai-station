@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="figure/illust.png" alt="Illustration" width="600"/>
+  <img src="figure/illust.png" alt="Illustration" width="800"/>
 </p>
+
 
 
 <div align="center">
