@@ -80,12 +80,21 @@ class GoogleGeminiConnector(BaseLLMConnector):
             max_output_tokens=self.max_output_tokens, 
             safety_settings=valid_safety_settings,
             system_instruction=self.system_prompt,
-            thinking_config=google_genai_types.ThinkingConfig(thinking_budget=24576, include_thoughts=True)
+            thinking_config=self._build_thinking_config()
         )
         
         self._initialize_chat_session()
 
         print(f"GoogleGeminiConnector for '{self.agent_name}' initialized with model: '{self.model_name}', temp: {self.temperature}.")
+
+    def _build_thinking_config(self) -> google_genai_types.ThinkingConfig:
+        """Return the right thinking config for the model family."""
+        model_prefix = (self.model_name or "").lower()
+        if model_prefix.startswith("models/"):
+            model_prefix = model_prefix[len("models/"):]
+        if model_prefix.startswith("gemini-2.5") or model_prefix.startswith("gemini-2.0"):
+            return google_genai_types.ThinkingConfig(thinking_budget=24576, include_thoughts=True)
+        return google_genai_types.ThinkingConfig(include_thoughts=True, thinking_level="high")        
 
     def _load_history_from_file(self) -> List[Dict[str, Any]]:
         """Loads history from file, converts to {'tick', 'role', 'text_content'}."""
