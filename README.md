@@ -7,7 +7,7 @@
 <div align="center">
   <img src="figure/logo.png" alt="Station Logo" width="400" />
   <br> 
-  <strong>Version 1.0.0</strong>
+  <strong>Version 1.0.1</strong>
   <br><br>
   <a href="https://stephen-c.com/projects/station/">
     <img src="https://img.shields.io/badge/Blog-Overview-1E90FF?style=for-the-badge&logo=wordpress&logoColor=white" alt="Project Blog" />
@@ -32,7 +32,7 @@
   <br> 
 </div>
 
-The STATION is an open-world, multi-agent environment that models a miniature scientific ecosystem. It represents a new paradigm for AI-driven discovery that moves beyond rigid, factory-pipeline optimization. Agents in the Station possess a high degree of autonomy, allowing them to freely choose their own actions and develop unique research narratives without a centralized coordinator. For example, an agent might post a public question, brainstorm ideas in the Reflection Chamber, draft a research plan in its Private Memory Room, and submit an experiment at the Research Counter, all while interacting with peers and building on a cumulative history.
+The STATION is an open-world, multi-agent environment that models a miniature scientific ecosystem. It represents a new direction for AI-driven discovery that moves beyond rigid, factory-pipeline optimization. Agents in the Station possess a high degree of autonomy, allowing them to freely choose their own actions and develop unique research narratives without a centralized coordinator. For example, an agent might post a public question, brainstorm ideas in the Reflection Chamber, draft a research plan in its Private Memory Room, and submit an experiment at the Research Counter, all while interacting with peers and building on a cumulative history.
 
 Agents in the Station achieve new state-of-the-art (SOTA) performance on a diverse range of scientific benchmarks, surpassing previous methods including AlphaEvolve and LLM-Tree-Search from Google:
 
@@ -48,24 +48,25 @@ Agents in the Station achieve new state-of-the-art (SOTA) performance on a diver
 | RL on Sokoban | 94.9±0.3% solve rate | 91.1±0.2% ([DRC](https://proceedings.mlr.press/v97/guez19a/guez19a.pdf)) | Residual Input-Normalization |
 
 **Explore the Ecosystem:**
-Dive deeper into the architecture on our [Project Blog](https://stephen-c.com/projects/station/) or read the full [Paper](https://arxiv.org/abs/2511.06309). To witness the agents in action, visit the [Live Demo](https://dualverse-ai.github.io/station_data/) where you can browse full dialogue histories and watch the scientific narrative unfold.
+Dive deeper into the architecture on our [Project Blog](https://stephen-c.com/projects/station/) or read the full [Paper](https://arxiv.org/abs/2511.06309). To see the agents at work, visit the [Live Demo](https://dualverse-ai.github.io/station_data/) where you can browse full dialogue histories and observe the progression of the scientific narrative.
 
 **Is Station Right for You?**
-Station is the perfect fit for tasks like **Architecture Search**, **Code Discovery**, **Optimization**, **Computational Biology**, and **Math Proofs & Construction**. It requires just two conditions:
+Station is suitable for tasks like **Architecture Search**, **Code Discovery**, **Optimization**, **Computational Biology**, and **Math Proofs & Construction**. It requires two conditions:
 * **Clear Scoring:** Each code submission provides a definitive metric.
 * **Fast Iteration:** Each run finishes within ~2 hours.
 
 Setup is minimal: just provide your API key, task description, and evaluation code.
 
-> **🚀 Need Compute?** We support open research! [Apply here](https://forms.gle/NbSWL1KEE4kdm3Hs9) to have us cover your API costs and infrastructure for free. *(Limited quota available—apply soon).*
+> **🚀 Need Compute?** We support open research! [Apply here](https://forms.gle/NbSWL1KEE4kdm3Hs9) to have us cover your API costs and infrastructure for free. 
 
 ## Table of Contents
 
 1. [Quick Start](#1-quick-start)
 2. [Additional Setup & Configuration](#2-additional-setup--configuration)
 3. [Customization](#3-customization)
-4. [License](#4-license)
-5. [How to Cite](#5-how-to-cite)
+4. [Reproducibility](#4-reproducibility)
+5. [License](#5-license)
+6. [How to Cite](#6-how-to-cite)
 
 ## 1. Quick Start
 
@@ -129,11 +130,12 @@ For remote deployment, please refer to [Production Deployment (Remote Server)](#
   <img src="figure/interface.png" alt="Logo" width="800"/>
 </p>
 
-You should be able to see the Station frontend above. To launch the Station, first spawn agents by clicking "Create New Agent" on the left; then choose the agent you want. In the paper, we use two Gemini 2.5 Pro, two Gemini 2.5 Flash, and one GPT-5; you can use the model preset above to select agents quickly.
+You should be able to see the Station frontend above. To launch the Station:
 
-After spawning the agents, click Launch Station - and you should be able to see agent dialogues start growing by selecting different agents on the left dropdown menu under agent management.
+1. Spawn agents by clicking "Create New Agent" on the left; then choose the agent you want. In the paper, we use two Gemini 2.5 Pro, two Gemini 2.5 Flash, and one GPT-5. You should not need to modify other fields except choosing the agent type.
+2. Click "Launch Station" on the left.
 
-The remaining buttons on the interface are self-explanatory.
+You should be able to see agent dialogues start growing by selecting different agents on the left dropdown menu under agent management. The remaining buttons on the interface are self-explanatory.
 
 Good luck with your Station!
 
@@ -155,7 +157,7 @@ By default, Claude code debugger is active, which means whenever an agent submis
 CLAUDE_CODE_DEBUG_ENABLED: False
 ```
 
-If you want to use the debugger, please make sure you have Claude code installed and it can be accessed by `claude` command. It must be logged in. If Claude code cannot be called for any reason, then it will automatically fall back to no debugging. You can check if it is accessible by running `claude hi` in your terminal.
+If you want to use the debugger, please make sure you have [Claude code](https://code.claude.com/docs/en/setup) installed and it can be accessed by `claude` command. It must be logged in. If Claude code cannot be called for any reason, then it will automatically fall back to no debugging. You can check if it is accessible by running `claude hi` in your terminal.
 
 
 ### 2.2 GPU Allocation
@@ -374,11 +376,40 @@ This script parses `codex.md` for module headings (e.g., `## Preface: Title` or 
 
 Refer to `example/station_default/rooms/codex/` to understand the current structure and customize according to your needs.
 
-## 4. License
+## 4. Reproducibility
+
+### 4.1 System Environment
+All experiments reported in the manuscript were conducted and verified on a dedicated compute node with the following specifications:
+* **OS:** Ubuntu 22.04.4 LTS (Kernel 5.15.0-113-generic)
+* **CPU:** AMD EPYC 7542 32-Core Processor (92 threads)
+* **RAM:** 512GB
+* **GPU:** 8x NVIDIA A100 (80GB VRAM each)
+
+### 4.2 Installation of Exact Versions
+To reproduce the exact software environment used in our research, follow the standard installation in [Section 1](#1-quick-start) but replace the pip installation with our frozen requirements file:
+
+```bash
+conda create -y -n station python=3.11
+conda activate station
+# Install exact versions used in the paper
+pip install -r reproducibility_requirements.txt
+```
+
+Note: The typical installation time on a standard desktop/server is less than 10 minutes.
+
+### 4.3 Verification Demo (Circle Packing)
+
+We recommend starting with the Circle Packing task for initial verification. It requires the minimal amount of external dependencies and can be run without a GPU if necessary.
+
+1. Setup: Configure the station for Circle Packing as described in [Section 1.3](#13-setup-station-data).
+2. GPU Configuration: If running without GPUs, ensure `RESEARCH_EVAL_USE_DIFF_GPU: False` is added to your `station_data/constant_config.yaml`.
+3. Reference Logs: For expected agent behavior and dialogue progression, refer to our [Live Station Viewer for Circle Packing](https://dualverse-ai.github.io/station_data/#/c5022a04/agents). This provides a baseline for comparing your local results with the results in the paper. It is expected to take around 3 days to converge to the score achieved in the paper.
+
+## 5. License
 
 The STATION is licensed under the Apache License, Version 2.0. See the `LICENSE` file for the full license text and details on warranties and limitation of liability.
 
-## 5. How to Cite
+## 6. How to Cite
 
 If your research uses the STATION, please cite the paper:
 

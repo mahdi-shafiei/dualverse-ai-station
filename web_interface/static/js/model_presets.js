@@ -52,6 +52,13 @@ const MODEL_PRESETS = [
         "llm_system_prompt": ""
     },
     {
+        "display_name": "GPT-5.2 (270k)",
+        "model_provider_class": "OpenAI",
+        "model_name": "gpt-5.2",
+        "initial_tokens_max": 270000,
+        "llm_system_prompt": ""
+    },        
+    {
         "display_name": "GPT-5.1 (270k)",
         "model_provider_class": "OpenAI",
         "model_name": "gpt-5.1",
